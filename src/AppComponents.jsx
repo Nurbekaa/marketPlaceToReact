@@ -31,7 +31,7 @@ function handlePreviousClick() {
         <div className="card_container" id={id}>
             <div className="img_slider">
                 <button className='slider_btn' onClick={handleClick}>< KeyboardArrowLeftIcon fontSize='20px'/></button>
-                <img className='img' alt="BBB" src={images[index]}></img>
+                <div className='img_container'><img className='img' alt="BBB" src={images[index]}></img></div>
                 <button className='slider_btn' onClick={handlePreviousClick} disabled={index === 0}>< KeyboardArrowRightIcon fontSize='20px'/></button>
             </div>
             <div className='card_text'>
