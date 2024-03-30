@@ -19,19 +19,19 @@ function handleMoreClick() {
     if (index < images.length-1){
       setIndex(index + 1);
     }
+}
 
-    function handlePreviousClick() {
-        if (index > 0) {
-          setIndex(index - 1);
-        }
-      }
+function handlePreviousClick() {
+  if (index > 0) {
+    setIndex(index - 1);
+  }
 }
 
     return (
         <div className="card_container" id={id}>
             <div className="img_slider">
                 <button className='slider_btn' onClick={handleClick}>< KeyboardArrowLeftIcon fontSize='20px'/></button>
-                <img className='img' src={images}></img>
+                <img className='img' alt="BBB" src={images[index]}></img>
                 <button className='slider_btn' onClick={handlePreviousClick} disabled={index === 0}>< KeyboardArrowRightIcon fontSize='20px'/></button>
             </div>
             <div className='card_text'>

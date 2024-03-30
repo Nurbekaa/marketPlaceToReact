@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 import {productsList} from "./data"
@@ -6,7 +6,7 @@ import Card from "./AppComponents"
 
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-import { useState } from 'react';
+
 
 function App() {
   return (
